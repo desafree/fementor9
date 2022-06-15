@@ -26,6 +26,116 @@ nav {
   max-width: 1170px;
   margin: 0 auto;
   border-bottom: 1px solid #e4e9f2;
+  position: relative;
+}
+
+nav .cart {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+  border-radius: 10px;
+  min-width: 360px;
+  bottom: -240px;
+  right: 0;
+  z-index: 100;
+  visibility: hidden;
+}
+
+nav .cart.active {
+  visibility: visible;
+}
+
+nav .cart .item {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px;
+  padding-bottom: 0;
+}
+
+nav .cart .item > img {
+  width: 50px;
+  height: 50px;
+}
+
+nav .cart .text {
+  display: flex;
+  align-items: center;
+}
+
+nav .cart .text p {
+  color: #69707d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 0;
+}
+
+.del {
+  width: 16px !important;
+  height: 16px;
+}
+
+nav .cart .text .price-checkout {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+nav .cart .text .price-checkout .price-checkoutt {
+  color: #1d2026;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.ccc {
+  display: flex;
+}
+
+nav .cart .check {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  background: #ff7e1b;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  border: none;
+  margin: 24px 30px;
+}
+
+nav .cart h6 {
+  padding: 26px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #1d2026;
+  border-bottom: 1px solid #e4e9f2;
+}
+
+nav .cart p {
+  padding: 80px 109px;
+  color: #69707d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 nav .logo {
@@ -73,6 +183,7 @@ main .carousel {
   flex-direction: column;
   gap: 32px;
   flex-basis: 50%;
+  position: relative;
 }
 
 main .carousel .img-primary {
@@ -208,4 +319,31 @@ form button {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+
+.next,
+.prev {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: wheat;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  top: 200px;
+  right: -25px;
+}
+
+.prev {
+  position: absolute;
+  top: 200px;
+  left: -25px;
 }
