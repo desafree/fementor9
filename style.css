@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #69707d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  max-width: 1170px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e4e9f2;
+}
+
+nav .logo {
+  margin-right: 60px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-right: auto;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #69707d;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: none;
+}
+
+nav img:last-child {
+  width: 50px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 90px 60px;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}
+
+main .carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex-basis: 50%;
+}
+
+main .carousel .img-primary {
+  background-image: url(./images/image-product-1.jpg);
+  width: 100%;
+  height: 445px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main .carousel .img-secondary-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+main .carousel .img-secondary-container .img-secondary {
+  height: 88px;
+  width: 88px;
+  background-image: url(./images/image-product-2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+main .text {
+  flex-basis: 50%;
+}
+
+main .text h4 {
+  color: #ff7e1b;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 27px;
+}
+
+main .text h1 {
+  color: #1d2026;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+main .text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+main .text .price-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+main .text .price-container h3 {
+  color: #1d2026;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+main .text .price-container h5 {
+  color: #ff7e1b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding: 4px 10px;
+  background-color: #ffeee2;
+  border-radius: 6px;
+}
+
+main .text .price-before-sale {
+  color: #b6bcc8;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-decoration: line-through;
+  margin-bottom: 32px;
+}
+
+form {
+  display: flex;
+  gap: 16px;
+}
+
+form input {
+  padding: 20px;
+  background: #f6f8fd;
+  border-radius: 10px;
+  border: none;
+  color: #1d2026;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+form button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  background: #ff7e1b;
+  box-shadow: 0px 20px 50px -20px #ff7e1b;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
